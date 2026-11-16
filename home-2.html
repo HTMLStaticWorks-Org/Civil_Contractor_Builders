@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home 2 — Architectural Storytelling | STRUCTURA BUILDERS</title>
+  <meta name="description" content="Explore STRUCTURA BUILDERS through architectural storytelling, building transformations, engineering processes, and selected structural projects.">
+  <meta property="og:title" content="Home 2 — Architectural Storytelling | STRUCTURA BUILDERS">
+  <meta property="og:description" content="Spaces built around your vision with structural excellence and architectural precision.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo/structura-logo.svg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 & Bootstrap Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/home-2.css">
+</head>
+<body>
+  <a href="#mainContent" class="skip-link">Skip to main content</a>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-announcement">
+    <div class="container">
+      <div class="announcement-inner">
+        <div class="announcement-tagline">
+          <i class="bi bi-shield-check" aria-hidden="true"></i>
+          <span>BUILDING TRUST THROUGH QUALITY CONSTRUCTION</span>
+        </div>
+        <div class="announcement-meta">
+          <a href="tel:+910000000000"><i class="bi bi-telephone-fill" aria-hidden="true"></i> +91 00000 00000</a>
+          <span class="hours-item"><i class="bi bi-clock" aria-hidden="true"></i> Mon – Sat: 9:00 AM – 6:30 PM</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Sticky Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container">
+      <div class="navbar-wrap">
+        <a href="index.html" class="brand-lockup" aria-label="STRUCTURA BUILDERS Home">
+          <img src="assets/images/logo/structura-logo.svg" alt="STRUCTURA BUILDERS Logo" width="40" height="40">
+          <span class="brand-text">
+            <span class="brand-name">STRUCTURA BUILDERS</span>
+            <span class="brand-sub">Civil Contractors &amp; Builders</span>
+          </span>
+        </a>
+
+        <nav aria-label="Primary Navigation">
+          <ul class="desktop-nav">
+            <li><a href="index.html" class="nav-link-item">Home</a></li>
+            <li><a href="home-2.html" class="nav-link-item active" aria-current="page">Home 2</a></li>
+            <li><a href="about.html" class="nav-link-item">About Us</a></li>
+            <li><a href="services.html" class="nav-link-item">Services</a></li>
+            <li><a href="projects.html" class="nav-link-item">Projects</a></li>
+            <li><a href="contact.html" class="nav-link-item">Contact Us</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-cta">
+          <button type="button" class="theme-toggle-btn" data-theme-toggle aria-pressed="false" aria-label="Toggle dark mode" title="Switch to Dark Mode">
+            <i class="bi bi-moon-stars" aria-hidden="true"></i>
+          </button>
+          <button type="button" class="rtl-toggle-btn" data-rtl-toggle aria-pressed="false" aria-label="Toggle RTL layout" title="Switch to Right-to-Left (RTL)">
+            <i class="bi bi-arrow-left-right" aria-hidden="true"></i>
+          </button>
+          <a href="contact.html#quote-form" class="btn-structura btn-primary-orange">Get a Quote</a>
+          <button type="button" class="hamburger-btn" id="mobileMenuBtn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileNavDrawer">
+            <i class="bi bi-list" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav-backdrop" id="mobileNavBackdrop"></div>
+  <aside class="mobile-nav-drawer" id="mobileNavDrawer" aria-label="Mobile Navigation" aria-hidden="true">
+    <div class="mobile-drawer-header">
+      <span class="brand-name">STRUCTURA BUILDERS</span>
+      <button type="button" class="mobile-close-btn" id="mobileCloseBtn" aria-label="Close navigation menu">
+        <i class="bi bi-x-lg" aria-hidden="true"></i>
+      </button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="index.html">Home <i class="bi bi-chevron-right" aria-hidden="true"></i></a></li>
+      <li><a href="home-2.html" class="active">Home 2 <i class="bi bi-chevron-right" aria-hidden="true"></i></a></li>
+      <li><a href="about.html">About Us <i class="bi bi-chevron-right" aria-hidden="true"></i></a></li>
+      <li><a href="services.html">Services <i class="bi bi-chevron-right" aria-hidden="true"></i></a></li>
+      <li><a href="projects.html">Projects <i class="bi bi-chevron-right" aria-hidden="true"></i></a></li>
+      <li><a href="contact.html">Contact Us <i class="bi bi-chevron-right" aria-hidden="true"></i></a></li>
+    </ul>
+    <div class="mobile-drawer-footer">
+      <div class="mobile-drawer-controls">
+        <button type="button" class="theme-toggle-btn" data-theme-toggle aria-pressed="false" aria-label="Toggle dark mode">
+          <i class="bi bi-moon-stars" aria-hidden="true"></i>
+          <span>Theme</span>
+        </button>
+        <button type="button" class="rtl-toggle-btn" data-rtl-toggle aria-pressed="false" aria-label="Toggle RTL layout">
+          <i class="bi bi-arrow-left-right" aria-hidden="true"></i>
+          <span>RTL / LTR</span>
+        </button>
+      </div>
+      <a href="contact.html#quote-form" class="btn-structura btn-primary-orange w-100">Get a Quote</a>
+    </div>
+  </aside>
+
+  <main id="mainContent">
+    <!-- Section 1: Diagonal Split Architectural Hero -->
+    <section class="h2-hero">
+      <div class="h2-hero-bg" style="background-image: url('assets/images/hero/h2.png');" aria-hidden="true"></div>
+
+      <div class="h2-hero-diagonal">
+        <div class="h2-hero-box">
+          <div class="h2-hero-eyebrow">STRUCTURAL EXCELLENCE | ARCHITECTURAL PRECISION</div>
+          <h1>Spaces Built Around <span class="h2-underline-accent">Your Vision.<svg class="h2-underline-svg" viewBox="0 0 260 12" preserveAspectRatio="none" aria-hidden="true"><path d="M 3 8 Q 130 2 257 7" fill="none" stroke="#E87932" stroke-width="4" stroke-linecap="round"/></svg></span></h1>
+          <p>Thoughtful planning, strong engineering and quality construction come together to create spaces designed for the future.</p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#building-expertise" class="btn-structura btn-primary-orange">
+              Discover Our Expertise <i class="bi bi-arrow-right" aria-hidden="true"></i>
+            </a>
+            <a href="contact.html#quote-form" class="btn-structura btn-outline-light">
+              Start a Project
+            </a>
+          </div>
+
+          <div class="h2-hero-pillars">
+            <div class="h2-hero-pillar">
+              <i class="bi bi-house-door" aria-hidden="true"></i>
+              <strong>Residential</strong>
+              <span>Construction</span>
+            </div>
+            <div class="h2-hero-pillar">
+              <i class="bi bi-building" aria-hidden="true"></i>
+              <strong>Commercial</strong>
+              <span>Buildings</span>
+            </div>
+            <div class="h2-hero-pillar">
+              <i class="bi bi-tools" aria-hidden="true"></i>
+              <strong>Turnkey</strong>
+              <span>Projects</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="h2-hero-stats-card">
+        <div class="h2-stat-item">
+          <i class="bi bi-award" aria-hidden="true"></i>
+          <div class="h2-stat-val">15+</div>
+          <div class="h2-stat-lbl">Years<br>Experience</div>
+        </div>
+        <div class="h2-stat-item">
+          <i class="bi bi-layers" aria-hidden="true"></i>
+          <div class="h2-stat-val">120+</div>
+          <div class="h2-stat-lbl">Projects<br>Completed</div>
+        </div>
+        <div class="h2-stat-item">
+          <i class="bi bi-people" aria-hidden="true"></i>
+          <div class="h2-stat-val">98%</div>
+          <div class="h2-stat-lbl">Client<br>Satisfaction</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Architectural Image Story (Creative Collage + Content) -->
+    <section class="section-pad">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-7" data-reveal>
+            <div class="h2-collage">
+              <div class="h2-collage-item is-tall">
+                <img src="assets/images/completed-projects/blue-hour-villa.jpg" alt="Completed modern luxury villa at twilight">
+              </div>
+              <div class="h2-collage-item">
+                <img src="assets/images/construction-process/brick-masonry-team.jpg" alt="Masons executing structural brickwork on site">
+              </div>
+              <div class="h2-collage-item">
+                <img src="assets/images/interiors/modern-living-staircase.jpg" alt="Modern interior living space with glass railing staircase">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5" data-reveal>
+            <div class="eyebrow">OUR APPROACH</div>
+            <h2 class="section-title">From Groundwork to Great Architecture.</h2>
+            <p>Great architecture relies on disciplined civil execution beneath the surface. Every column alignment, reinforcement cage, and finishing detail is coordinated so form and structural strength reinforce each other.</p>
+            <p>We bridge architectural intent and on-site engineering—delivering residential villas, commercial complexes, and bespoke interiors built to perform for decades.</p>
+            <a href="about.html" class="btn-structura btn-navy mt-2">
+              Explore Our Approach <i class="bi bi-arrow-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Page-Changing Discipline Switcher -->
+    <section class="section-pad bg-light-concrete">
+      <div class="container">
+        <div class="row align-items-end mb-4 g-3" data-reveal>
+          <div class="col-lg-7">
+            <div class="eyebrow">INTERACTIVE PHASE EXPLORER</div>
+            <h2 class="section-title mb-0">Switch Between Construction Disciplines</h2>
+          </div>
+          <div class="col-lg-5 text-lg-end">
+            <span class="small text-muted">Select a phase below to inspect technical focus &amp; execution standards</span>
+          </div>
+        </div>
+
+        <div class="h2-switcher-wrap" data-reveal>
+          <div class="row g-0">
+            <div class="col-lg-4">
+              <div class="h2-switcher-tabs" role="tablist" aria-label="Construction Disciplines">
+                <button type="button" class="h2-switcher-tab is-active" role="tab" aria-selected="true" data-h2-tab="rcc">
+                  <span class="h2-tab-num">01</span>
+                  <span>
+                    <span class="h2-tab-title">Structural RCC &amp; Foundations</span>
+                    <span class="h2-tab-sub">Substructure, columns, beams &amp; slabs</span>
+                  </span>
+                </button>
+                <button type="button" class="h2-switcher-tab" role="tab" aria-selected="false" data-h2-tab="facade">
+                  <span class="h2-tab-num">02</span>
+                  <span>
+                    <span class="h2-tab-title">Architectural Facade &amp; Elevation</span>
+                    <span class="h2-tab-sub">Cladding, glazing &amp; weatherproofing</span>
+                  </span>
+                </button>
+                <button type="button" class="h2-switcher-tab" role="tab" aria-selected="false" data-h2-tab="industrial">
+                  <span class="h2-tab-num">03</span>
+                  <span>
+                    <span class="h2-tab-title">Steel &amp; Commercial Frameworks</span>
+                    <span class="h2-tab-sub">Wide-span trusses &amp; multi-level grids</span>
+                  </span>
+                </button>
+                <button type="button" class="h2-switcher-tab" role="tab" aria-selected="false" data-h2-tab="interiors">
+                  <span class="h2-tab-num">04</span>
+                  <span>
+                    <span class="h2-tab-title">Turnkey Interior Finishing</span>
+                    <span class="h2-tab-sub">Flooring, ceilings, carpentry &amp; MEP</span>
+                  </span>
+                </button>
+              </div>
+            </div>
+
+            <div class="col-lg-8">
+              <div class="h2-switcher-stage">
+                <div class="h2-switcher-panel is-active" role="tabpanel" data-h2-panel="rcc">
+                  <div class="h2-panel-media">
+                    <img src="assets/images/construction-process/staircase-formwork.jpg" alt="RCC staircase formwork and steel reinforcement">
+                  </div>
+                  <div class="h2-panel-content">
+                    <div class="eyebrow">PHASE 01</div>
+                    <h3 class="h4 mb-2">Structural RCC &amp; Foundations</h3>
+                    <p class="small mb-0">Precision bar-bending, braced shuttering, and vibrated concrete placement engineered for load-bearing stability.</p>
+                    <ul class="h2-panel-specs">
+                      <li><span>Primary Focus</span><span>Footings, Columns, Beams</span></li>
+                      <li><span>Site Verification</span><span>Slump &amp; Rebar Checks</span></li>
+                      <li><span>Sector Use</span><span>Residential &amp; Commercial</span></li>
+                    </ul>
+                    <a href="services.html#structural" class="btn-structura btn-navy align-self-start">Explore Structural Works</a>
+                  </div>
+                </div>
+
+                <div class="h2-switcher-panel" role="tabpanel" data-h2-panel="facade" hidden>
+                  <div class="h2-panel-media">
+                    <img src="assets/images/commercial/corporate-glass-facade.jpg" alt="Modern commercial glass and composite facade">
+                  </div>
+                  <div class="h2-panel-content">
+                    <div class="eyebrow">PHASE 02</div>
+                    <h3 class="h4 mb-2">Architectural Facade &amp; Elevation</h3>
+                    <p class="small mb-0">Clean elevation geometry combining curtain glazing, composite cladding, and exterior waterproofing layers.</p>
+                    <ul class="h2-panel-specs">
+                      <li><span>Primary Focus</span><span>Glazing &amp; Exterior Cladding</span></li>
+                      <li><span>Site Verification</span><span>Plumb &amp; Sealant Alignment</span></li>
+                      <li><span>Sector Use</span><span>Villas &amp; Office Hubs</span></li>
+                    </ul>
+                    <a href="projects.html" class="btn-structura btn-navy align-self-start">View Completed Facades</a>
+                  </div>
+                </div>
+
+                <div class="h2-switcher-panel" role="tabpanel" data-h2-panel="industrial" hidden>
+                  <div class="h2-panel-media">
+                    <img src="assets/images/industrial/industrial-steel-frame.jpg" alt="Industrial warehouse steel portal frame construction">
+                  </div>
+                  <div class="h2-panel-content">
+                    <div class="eyebrow">PHASE 03</div>
+                    <h3 class="h4 mb-2">Steel &amp; Commercial Frameworks</h3>
+                    <p class="small mb-0">High-clearance structural steel erection and heavy-duty RCC pedestals built for warehouses and business centers.</p>
+                    <ul class="h2-panel-specs">
+                      <li><span>Primary Focus</span><span>Portal Frames &amp; Trusses</span></li>
+                      <li><span>Site Verification</span><span>Anchor Bolt &amp; Torque Checks</span></li>
+                      <li><span>Sector Use</span><span>Warehouses &amp; Factories</span></li>
+                    </ul>
+                    <a href="services.html#industrial" class="btn-structura btn-navy align-self-start">Explore Industrial Scope</a>
+                  </div>
+                </div>
+
+                <div class="h2-switcher-panel" role="tabpanel" data-h2-panel="interiors" hidden>
+                  <div class="h2-panel-media">
+                    <img src="assets/images/interiors/interior-finishing-site.jpg" alt="Interior ceiling, flooring, and carpentry finishing">
+                  </div>
+                  <div class="h2-panel-content">
+                    <div class="eyebrow">PHASE 04</div>
+                    <h3 class="h4 mb-2">Turnkey Interior Finishing</h3>
+                    <p class="small mb-0">Coordinated gypsum ceilings, level marble and tile flooring, carpentry, and lighting integration ready for handover.</p>
+                    <ul class="h2-panel-specs">
+                      <li><span>Primary Focus</span><span>Flooring, Ceilings &amp; Woodwork</span></li>
+                      <li><span>Site Verification</span><span>Level &amp; Snag-List Audit</span></li>
+                      <li><span>Sector Use</span><span>Homes &amp; Commercial Suites</span></li>
+                    </ul>
+                    <a href="services.html#finishing" class="btn-structura btn-navy align-self-start">Explore Finishing Works</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Building Expertise (Horizontal Scroll Gallery) -->
+    <section id="building-expertise" class="section-pad">
+      <div class="container">
+        <div class="h2-gallery-header" data-reveal>
+          <div>
+            <div class="eyebrow">BUILDING EXPERTISE</div>
+            <h2 class="section-title mb-0">Structures Across Every Sector</h2>
+          </div>
+          <div class="h2-scroll-controls">
+            <button type="button" class="h2-scroll-btn" id="expertisePrev" aria-label="Scroll left">
+              <i class="bi bi-arrow-left" aria-hidden="true"></i>
+            </button>
+            <button type="button" class="h2-scroll-btn" id="expertiseNext" aria-label="Scroll right">
+              <i class="bi bi-arrow-right" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="h2-horizontal-track" id="expertiseTrack" data-reveal>
+          <article class="h2-expertise-panel">
+            <img src="assets/images/residential/twin-towers-rcc.jpg" alt="Multi-story residential apartment towers under construction">
+            <div class="h2-expertise-overlay">
+              <h3>Residential Spaces</h3>
+              <p>Custom villas, duplex homes, and multi-story residential towers engineered for comfort and lasting durability.</p>
+              <a href="services.html#residential" class="h2-expertise-link">Explore <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="h2-expertise-panel">
+            <img src="assets/images/commercial/commercial-rcc-framework.jpg" alt="Large commercial RCC framework with tower cranes">
+            <div class="h2-expertise-overlay">
+              <h3>Commercial Developments</h3>
+              <p>Office buildings, retail hubs, and business complexes built with high-load RCC grids and modern facades.</p>
+              <a href="services.html#commercial" class="h2-expertise-link">Explore <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="h2-expertise-panel">
+            <img src="assets/images/construction-process/podium-concrete-formwork.jpg" alt="Heavy concrete podium and retaining wall formwork">
+            <div class="h2-expertise-overlay">
+              <h3>Industrial Structures</h3>
+              <p>High-bay warehouses, factory floors, and heavy structural steel-and-concrete frameworks.</p>
+              <a href="services.html#industrial" class="h2-expertise-link">Explore <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="h2-expertise-panel">
+            <img src="assets/images/renovation/terrace-waterproofing-membrane.jpg" alt="Terrace waterproofing membrane installation by technicians">
+            <div class="h2-expertise-overlay">
+              <h3>Renovation &amp; Restoration</h3>
+              <p>Structural strengthening, waterproofing systems, and complete interior-exterior building upgrades.</p>
+              <a href="services.html#renovation" class="h2-expertise-link">Explore <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Building Transformation (Before / After Gallery) -->
+    <section class="section-pad bg-light-concrete">
+      <div class="container">
+        <div class="row align-items-end mb-4 g-3" data-reveal>
+          <div class="col-lg-8">
+            <div class="eyebrow">VISUAL TRANSFORMATION</div>
+            <h2 class="section-title mb-0">See the Transformation. Experience the Quality.</h2>
+          </div>
+          <div class="col-lg-4 text-lg-end">
+            <span class="ba-hint-badge"><i class="bi bi-arrows-move" aria-hidden="true"></i> Drag slider to compare stages</span>
+          </div>
+        </div>
+
+        <div class="ba-slider" data-ba-slider data-reveal aria-label="Interior finishing before and after comparison">
+          <div class="ba-img-wrap">
+            <img src="assets/images/interiors/modern-living-staircase.jpg" alt="Completed modern interior living room and staircase">
+          </div>
+          <div class="ba-img-wrap ba-before-wrap">
+            <img src="assets/images/interiors/interior-finishing-site.jpg" alt="Interior space during ceiling, flooring, and carpentry finishing">
+          </div>
+          <span class="ba-label ba-label-before">Before</span>
+          <span class="ba-label ba-label-after">After</span>
+          <div class="ba-divider">
+            <div class="ba-handle" role="slider" tabindex="0" aria-label="Comparison divider" aria-valuemin="4" aria-valuemax="96" aria-valuenow="50">
+              <i class="bi bi-chevron-left" aria-hidden="true"></i>
+              <i class="bi bi-chevron-right" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: Engineering Excellence (Editorial Photo + Vertical Numbered List) -->
+    <section class="section-pad">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-5" data-reveal>
+            <img src="assets/images/engineering-team/concrete-slump-test.jpg" class="h2-eng-photo" alt="Civil engineer conducting an on-site concrete slump test with clipboard">
+          </div>
+          <div class="col-lg-7" data-reveal>
+            <div class="eyebrow">BUILT ON ENGINEERING EXPERTISE</div>
+            <h2 class="section-title">Every Detail Matters. Every Structure Counts.</h2>
+            <ol class="h2-numbered-list">
+              <li class="h2-numbered-item">
+                <span class="h2-num-badge">01</span>
+                <div>
+                  <h3>Precision Planning</h3>
+                  <p>Detailed bar-bending schedules, level checks, and phased site logistics before work begins.</p>
+                </div>
+              </li>
+              <li class="h2-numbered-item">
+                <span class="h2-num-badge">02</span>
+                <div>
+                  <h3>Material Quality</h3>
+                  <p>On-site slump testing, verified steel grades, and batch-checked aggregates for consistent strength.</p>
+                </div>
+              </li>
+              <li class="h2-numbered-item">
+                <span class="h2-num-badge">03</span>
+                <div>
+                  <h3>Structural Reliability</h3>
+                  <p>Strict adherence to structural drawings, cover blocks, vibration compaction, and curing timelines.</p>
+                </div>
+              </li>
+              <li class="h2-numbered-item">
+                <span class="h2-num-badge">04</span>
+                <div>
+                  <h3>Construction Supervision</h3>
+                  <p>Dedicated civil engineers monitoring formwork, masonry alignment, and MEP sleeves daily.</p>
+                </div>
+              </li>
+              <li class="h2-numbered-item">
+                <span class="h2-num-badge">05</span>
+                <div>
+                  <h3>Safety Standards</h3>
+                  <p>Protective gear enforcement, braced scaffolding, and hazard-free site access at every floor.</p>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 6: Project Journey (5-Stage Timeline) -->
+    <section class="section-pad bg-navy">
+      <div class="container">
+        <div class="text-lg-center mx-auto" style="max-width: 640px;" data-reveal>
+          <div class="eyebrow">PROJECT JOURNEY</div>
+          <h2 class="section-title">Five Milestones to Handover</h2>
+          <p class="mb-0">A clear, predictable workflow from initial site assessment to keys in hand.</p>
+        </div>
+
+        <div class="h2-journey-grid" data-reveal>
+          <div class="h2-journey-step">
+            <div class="h2-journey-icon"><i class="bi bi-chat-dots" aria-hidden="true"></i></div>
+            <div class="h2-journey-card">
+              <div class="step-tag">Stage 01</div>
+              <h3>Consultation</h3>
+              <p>Aligning on space requirements, architectural vision, and timeline goals.</p>
+            </div>
+          </div>
+          <div class="h2-journey-step">
+            <div class="h2-journey-icon"><i class="bi bi-compass" aria-hidden="true"></i></div>
+            <div class="h2-journey-card">
+              <div class="step-tag">Stage 02</div>
+              <h3>Planning</h3>
+              <p>Site survey, soil verification, and structural coordination.</p>
+            </div>
+          </div>
+          <div class="h2-journey-step">
+            <div class="h2-journey-icon"><i class="bi bi-calculator" aria-hidden="true"></i></div>
+            <div class="h2-journey-card">
+              <div class="step-tag">Stage 03</div>
+              <h3>Estimation</h3>
+              <p>Transparent BOQ, material specifications, and milestone budgeting.</p>
+            </div>
+          </div>
+          <div class="h2-journey-step">
+            <div class="h2-journey-icon"><i class="bi bi-bricks" aria-hidden="true"></i></div>
+            <div class="h2-journey-card">
+              <div class="step-tag">Stage 04</div>
+              <h3>Construction</h3>
+              <p>Supervised civil, structural, MEP, and architectural finishing.</p>
+            </div>
+          </div>
+          <div class="h2-journey-step">
+            <div class="h2-journey-icon"><i class="bi bi-key" aria-hidden="true"></i></div>
+            <div class="h2-journey-card">
+              <div class="step-tag">Stage 05</div>
+              <h3>Handover</h3>
+              <p>Final quality walkthrough, documentation, and key delivery.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 7: Selected Projects (Asymmetric Masonry Grid — Distinct Photos) -->
+    <section class="section-pad">
+      <div class="container">
+        <div class="row align-items-end mb-5 g-3" data-reveal>
+          <div class="col-lg-7">
+            <div class="eyebrow">SELECTED PROJECTS</div>
+            <h2 class="section-title mb-0">Architectural &amp; Structural Portfolio</h2>
+          </div>
+          <div class="col-lg-5 text-lg-end">
+            <a href="projects.html" class="btn-structura btn-navy">View All Projects</a>
+          </div>
+        </div>
+
+        <div class="h2-masonry" data-reveal>
+          <article class="h2-masonry-card tall">
+            <img src="assets/images/completed-projects/resort-villa-sunset.jpg" alt="Completed resort-style luxury villa with swimming pool at sunset">
+            <div class="h2-masonry-caption">
+              <span class="h2-masonry-cat">Residential</span>
+              <h3>Palm Court Pool Villa</h3>
+              <div class="h2-masonry-loc">ECR, Chennai</div>
+              <a href="projects.html" class="h2-masonry-link">View Project <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="h2-masonry-card wide">
+            <img src="assets/images/residential/apartment-facade-crane.jpg" alt="High-rise residential apartment facade under construction">
+            <div class="h2-masonry-caption">
+              <span class="h2-masonry-cat">Residential</span>
+              <h3>Crestview Apartment Towers</h3>
+              <div class="h2-masonry-loc">Gachibowli, Hyderabad</div>
+              <a href="projects.html" class="h2-masonry-link">View Project <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="h2-masonry-card wide">
+            <img src="assets/images/commercial/commercial-complex-site.jpg" alt="Commercial complex structure with tower crane">
+            <div class="h2-masonry-caption">
+              <span class="h2-masonry-cat">Commercial</span>
+              <h3>Avenue Business Plaza</h3>
+              <div class="h2-masonry-loc">OMR Corridor, Chennai</div>
+              <a href="projects.html" class="h2-masonry-link">View Project <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="h2-masonry-card tall">
+            <img src="assets/images/industrial/industrial-steel-frame.jpg" alt="Industrial warehouse steel portal frame construction">
+            <div class="h2-masonry-caption">
+              <span class="h2-masonry-cat">Industrial</span>
+              <h3>Apex Logistics Warehouse</h3>
+              <div class="h2-masonry-loc">Sriperumbudur, Chennai</div>
+              <a href="projects.html" class="h2-masonry-link">View Project <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="h2-masonry-card wide">
+            <img src="assets/images/interiors/false-ceiling-work.jpg" alt="Commercial interior acoustic ceiling and lighting installation">
+            <div class="h2-masonry-caption">
+              <span class="h2-masonry-cat">Commercial Interiors</span>
+              <h3>TechPark Acoustic Fit-Out</h3>
+              <div class="h2-masonry-loc">Kakkanad, Kochi</div>
+              <a href="projects.html" class="h2-masonry-link">View Project <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="h2-masonry-card wide">
+            <img src="assets/images/renovation/roof-waterproofing-coat.jpg" alt="Roof waterproofing and heat-reflective coating application">
+            <div class="h2-masonry-caption">
+              <span class="h2-masonry-cat">Renovation</span>
+              <h3>Terrace Weatherproofing Upgrade</h3>
+              <div class="h2-masonry-loc">Jayanagar, Bengaluru</div>
+              <a href="projects.html" class="h2-masonry-link">View Project <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 8: Closing CTA -->
+    <section class="closing-cta" style="background-image: url('assets/images/completed-projects/twilight-luxury-villa.jpg');">
+      <div class="container" data-reveal>
+        <h2>Let's Create Something Built to Last.</h2>
+        <p>Have a residential, commercial or industrial project in mind? Let's start the conversation.</p>
+        <a href="contact.html#quote-form" class="btn-structura btn-primary-orange">
+          Request a Project Quote <i class="bi bi-arrow-right" aria-hidden="true"></i>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4 g-lg-5">
+        <div class="col-lg-4">
+          <div class="footer-brand d-flex align-items-center gap-3">
+            <img src="assets/images/logo/structura-logo.svg" alt="STRUCTURA BUILDERS Logo" width="42" height="42">
+            <div>
+              <div class="footer-brand-name">STRUCTURA BUILDERS</div>
+              <div class="footer-tagline">Civil Contractors &amp; Builders</div>
+            </div>
+          </div>
+          <p class="footer-desc">Civil contractors and builders delivering residential, commercial, industrial, and structural construction with engineering precision and reliable project coordination.</p>
+          <div class="footer-socials">
+            <a href="contact.html" aria-label="LinkedIn placeholder"><i class="bi bi-linkedin" aria-hidden="true"></i></a>
+            <a href="contact.html" aria-label="Instagram placeholder"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+            <a href="contact.html" aria-label="Facebook placeholder"><i class="bi bi-facebook" aria-hidden="true"></i></a>
+            <a href="contact.html" aria-label="YouTube placeholder"><i class="bi bi-youtube" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-2">
+          <h3 class="footer-heading">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="home-2.html">Home 2</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-6 col-lg-3">
+          <h3 class="footer-heading">Our Services</h3>
+          <ul class="footer-links">
+            <li><a href="services.html#residential">Residential Construction</a></li>
+            <li><a href="services.html#commercial">Commercial Construction</a></li>
+            <li><a href="services.html#industrial">Industrial Construction</a></li>
+            <li><a href="services.html#structural">Structural Works</a></li>
+            <li><a href="services.html#renovation">Renovation</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3">
+          <h3 class="footer-heading">Contact</h3>
+          <ul class="footer-contact-list">
+            <li><i class="bi bi-telephone-fill" aria-hidden="true"></i> <span>+91 00000 00000</span></li>
+            <li><i class="bi bi-envelope-fill" aria-hidden="true"></i> <span>info@structurabuilders.example</span></li>
+            <li><i class="bi bi-geo-alt-fill" aria-hidden="true"></i> <span>[Office Address Placeholder, Street, City, State - PIN]</span></li>
+            <li><i class="bi bi-clock-fill" aria-hidden="true"></i> <span>Mon – Sat: 9:00 AM – 6:30 PM</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-inner">
+          <div>&copy; 2026 STRUCTURA BUILDERS. All rights reserved.</div>
+          <div class="footer-bottom-actions">
+            <a href="contact.html#privacy-note">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Icon -->
+  <button type="button" class="floating-back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="bi bi-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/home-2.js"></script>
+</body>
+</html>

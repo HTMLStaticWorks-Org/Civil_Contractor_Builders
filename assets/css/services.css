@@ -1,0 +1,796 @@
+/* ==========================================================================
+   SERVICES PAGE (services.html) — Connected Architectural Sections & Subnav
+   ========================================================================== */
+
+/* Sticky Service Navigation Rail */
+.services-subnav {
+  position: sticky;
+  top: 76px;
+  z-index: 1015;
+  background: var(--navy);
+  border-bottom: 3px solid var(--orange);
+  box-shadow: var(--shadow-sm);
+}
+
+.services-subnav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 10px 0;
+}
+
+.services-subnav-links {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  padding: 2px 0;
+}
+
+.services-subnav-links::-webkit-scrollbar {
+  display: none;
+}
+
+.services-subnav-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 14px;
+  font-family: var(--font-heading);
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.8);
+  border-radius: var(--radius-sm);
+  white-space: nowrap;
+  border: 1px solid transparent;
+  transition: all var(--transition);
+}
+
+.services-subnav-link span.nav-num {
+  color: var(--orange);
+  font-weight: 800;
+}
+
+.services-subnav-link:hover,
+.services-subnav-link.is-active {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(232, 121, 50, 0.55);
+  color: var(--white);
+}
+
+.services-subnav-link.is-active {
+  background: var(--orange);
+  border-color: var(--orange);
+}
+
+.services-subnav-link.is-active span.nav-num {
+  color: var(--white);
+}
+
+.services-subnav-cta {
+  flex-shrink: 0;
+  padding: 8px 16px;
+  font-size: 0.78rem;
+}
+
+/* Connected Service Section Transitions */
+.service-section-node {
+  scroll-margin-top: 96px;
+  position: relative;
+}
+
+.service-section-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 18px;
+  margin-top: 26px;
+}
+
+.service-next-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-heading);
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--navy);
+  padding: 10px 4px;
+}
+
+.service-next-link:hover {
+  color: var(--orange);
+}
+
+.bg-navy .service-next-link {
+  color: rgba(255, 255, 255, 0.86);
+}
+
+.bg-navy .service-next-link:hover {
+  color: var(--orange);
+}
+
+@media (max-width: 991.98px) {
+  .services-subnav {
+    top: 76px;
+  }
+  .services-subnav-cta {
+    display: none;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .services-subnav {
+    top: 68px;
+  }
+}
+
+.service-scope-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px 18px;
+}
+
+.service-scope-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 0.93rem;
+  color: var(--navy);
+}
+
+.service-scope-list li i {
+  color: var(--orange);
+  font-size: 1.05rem;
+}
+
+/* Section 2: Residential — Curved Arch + Central Circular Photo Medallion (No Cards, No Split) */
+.res-arch-stage {
+  position: relative;
+  margin-top: 44px;
+  padding-top: 18px;
+}
+
+.res-arch-svg {
+  position: absolute;
+  top: 10px;
+  left: 12%;
+  width: 76%;
+  height: 150px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.res-arch-grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 1.15fr 1fr;
+  gap: 28px;
+  align-items: center;
+}
+
+.res-arch-side {
+  text-align: center;
+  padding-top: 56px;
+}
+
+.res-side-pin {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--navy);
+  color: var(--white);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.35rem;
+  margin-bottom: 16px;
+  box-shadow: var(--shadow-md);
+}
+
+.res-side-pin.is-orange {
+  background: var(--orange);
+}
+
+.res-side-eyebrow {
+  font-family: var(--font-heading);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--orange);
+  padding-bottom: 8px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+  display: inline-block;
+}
+
+.res-arch-side h3 {
+  font-size: 1.18rem;
+  margin-bottom: 10px;
+}
+
+.res-arch-side p {
+  font-size: 0.92rem;
+  max-width: 300px;
+  margin: 0 auto 16px;
+}
+
+.res-pill-tag {
+  display: inline-block;
+  padding: 6px 14px;
+  background: var(--light-concrete);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  font-family: var(--font-heading);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--navy);
+}
+
+.res-arch-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.res-apex-pin {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--white);
+  border: 2px solid var(--orange);
+  color: var(--navy);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  box-shadow: var(--shadow-sm);
+}
+
+.res-center-kicker {
+  font-family: var(--font-heading);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--orange);
+  margin-bottom: 14px;
+}
+
+.res-medallion-ring {
+  width: 248px;
+  height: 248px;
+  border-radius: 50%;
+  padding: 10px;
+  border: 2px dashed rgba(232, 121, 50, 0.55);
+  background: var(--white);
+  box-shadow: var(--shadow-lg);
+}
+
+.res-medallion-ring img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--navy);
+}
+
+/* Section 3: Commercial (Navy Band) */
+.comm-photo {
+  width: 100%;
+  aspect-ratio: 16 / 11;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.comm-spec-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.comm-spec-item {
+  padding: 14px 16px;
+  background: rgba(255, 255, 255, 0.06);
+  border-left: 3px solid var(--orange);
+  border-radius: var(--radius-sm);
+  color: var(--white);
+  font-weight: 600;
+  font-size: 0.92rem;
+}
+
+/* Section 4: Industrial (Wide Banner + 4-Col Spec Strip) */
+.industrial-banner-img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-md);
+}
+
+.industrial-spec-strip {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 28px;
+}
+
+.ind-spec-box {
+  background: var(--light-concrete);
+  border-top: 3px solid var(--navy);
+  padding: 20px;
+  border-radius: var(--radius-sm);
+}
+
+.ind-spec-box h3 {
+  font-size: 1.02rem;
+  margin-bottom: 6px;
+}
+
+.ind-spec-box p {
+  font-size: 0.87rem;
+  margin-bottom: 0;
+}
+
+/* Section 5: Structural & Civil Works — Milestone Arch Timeline (Ref #12, No Cards, No Split) */
+.arch-timeline-stage {
+  position: relative;
+  margin-top: 48px;
+  padding-top: 20px;
+}
+
+.arch-svg-backdrop {
+  position: absolute;
+  top: 0;
+  left: 4%;
+  right: 4%;
+  width: 92%;
+  height: 210px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.arch-nodes-row {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 20px;
+  align-items: start;
+}
+
+.arch-node {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Staggered vertical offsets following the SVG arch curve */
+.arch-node:nth-child(1),
+.arch-node:nth-child(5) {
+  margin-top: 118px;
+}
+
+.arch-node:nth-child(2),
+.arch-node:nth-child(4) {
+  margin-top: 44px;
+}
+
+.arch-node:nth-child(3) {
+  margin-top: 0;
+}
+
+.arch-pin {
+  position: relative;
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background: var(--white);
+  border: 3px solid var(--navy);
+  color: var(--navy);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  box-shadow: var(--shadow-md);
+  margin-bottom: 16px;
+  transition: all var(--transition);
+}
+
+.arch-node:hover .arch-pin {
+  background: var(--orange);
+  border-color: var(--orange);
+  color: var(--white);
+  transform: translateY(-4px);
+}
+
+.arch-pin-num {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--orange);
+  color: var(--white);
+  border: 2px solid var(--white);
+  font-family: var(--font-heading);
+  font-size: 0.7rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arch-node h3 {
+  font-size: 1.02rem;
+  margin-bottom: 6px;
+}
+
+.arch-node p {
+  font-size: 0.85rem;
+  max-width: 200px;
+  margin-bottom: 0;
+}
+
+/* Section 6: Renovation — Full-Width Diptych Panorama & Typographic Scope Rail (No Cards, No Split) */
+.reno-diptych {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr;
+  gap: 8px;
+  margin-top: 32px;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+
+.reno-diptych-frame {
+  position: relative;
+  height: 360px;
+  overflow: hidden;
+}
+
+.reno-diptych-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.reno-diptych-frame:hover img {
+  transform: scale(1.04);
+}
+
+.reno-diptych-caption {
+  position: absolute;
+  bottom: 14px;
+  left: 16px;
+  background: rgba(14, 32, 46, 0.85);
+  color: var(--white);
+  font-family: var(--font-heading);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 5px 12px;
+  border-left: 3px solid var(--orange);
+}
+
+[dir="rtl"] .reno-diptych-caption {
+  left: auto;
+  right: 16px;
+  border-left: none;
+  border-right: 3px solid var(--orange);
+}
+
+.reno-scope-rail {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin-top: 32px;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.reno-scope-item {
+  padding: 22px 20px;
+  border-right: 1px solid var(--border);
+}
+
+.reno-scope-item:last-child {
+  border-right: none;
+}
+
+[dir="rtl"] .reno-scope-item {
+  border-right: none;
+  border-left: 1px solid var(--border);
+}
+
+[dir="rtl"] .reno-scope-item:last-child {
+  border-left: none;
+}
+
+.reno-scope-num {
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: var(--orange);
+  letter-spacing: 0.12em;
+  margin-bottom: 6px;
+}
+
+.reno-scope-item h3 {
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+
+.reno-scope-item p {
+  font-size: 0.85rem;
+  margin-bottom: 0;
+}
+
+/* Section 7: Finishing 3-Image Strip */
+.finishing-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  margin-top: 32px;
+}
+
+.finishing-card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  background: var(--white);
+}
+
+.finishing-card img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+.finishing-card-body {
+  padding: 18px 20px;
+}
+
+.finishing-card-body h3 {
+  font-size: 1.04rem;
+  margin-bottom: 6px;
+}
+
+.finishing-card-body p {
+  font-size: 0.88rem;
+  margin-bottom: 0;
+}
+
+/* Section 8: Work Method — Ascending S-Curve Path with Images */
+.method-path-stage {
+  position: relative;
+  margin-top: 48px;
+}
+
+.method-curve-svg {
+  position: absolute;
+  top: 26px;
+  left: 6%;
+  width: 88%;
+  height: 150px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.curve-flow-dash {
+  animation: curveDashFlow 22s linear infinite;
+}
+
+@keyframes curveDashFlow {
+  from {
+    stroke-dashoffset: 260;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.method-path-grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 20px;
+  align-items: start;
+}
+
+.method-path-step {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Ascending S-Curve vertical rhythm */
+.method-path-step:nth-child(1) { margin-top: 96px; }
+.method-path-step:nth-child(2) { margin-top: 68px; }
+.method-path-step:nth-child(3) { margin-top: 42px; }
+.method-path-step:nth-child(4) { margin-top: 18px; }
+.method-path-step:nth-child(5) { margin-top: 0; }
+
+.method-photo-node {
+  position: relative;
+  width: 118px;
+  height: 118px;
+  border-radius: 50%;
+  padding: 5px;
+  background: var(--white);
+  border: 3px solid var(--navy);
+  box-shadow: var(--shadow-md);
+  margin-bottom: 16px;
+  transition: transform var(--transition), border-color var(--transition);
+}
+
+.method-path-step:hover .method-photo-node {
+  transform: translateY(-5px);
+  border-color: var(--orange);
+}
+
+.method-photo-node img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.method-step-pill {
+  display: inline-block;
+  background: var(--navy);
+  color: var(--white);
+  font-family: var(--font-heading);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: 999px;
+  margin-bottom: 10px;
+}
+
+.method-path-step:hover .method-step-pill {
+  background: var(--orange);
+}
+
+.method-path-step h3 {
+  font-size: 1.02rem;
+  margin-bottom: 6px;
+}
+
+.method-path-step p {
+  font-size: 0.85rem;
+  max-width: 210px;
+  margin-bottom: 0;
+}
+
+/* Section 9: Materials & Quality */
+.materials-photo {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-md);
+}
+
+/* Section 10: FAQ Accordion */
+.structura-accordion .accordion-item {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+
+.structura-accordion .accordion-button {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--navy);
+  background: var(--white);
+  padding: 18px 22px;
+  box-shadow: none;
+}
+
+.structura-accordion .accordion-button:not(.collapsed) {
+  background: var(--light-concrete);
+  color: var(--navy);
+  border-bottom: 1px solid var(--border);
+}
+
+.structura-accordion .accordion-button:focus {
+  box-shadow: 0 0 0 2px rgba(232, 121, 50, 0.35);
+}
+
+.structura-accordion .accordion-body {
+  color: var(--grey);
+  font-size: 0.94rem;
+  padding: 18px 22px;
+}
+
+@media (max-width: 991.98px) {
+  .res-arch-svg,
+  .method-curve-svg,
+  .arch-svg-backdrop {
+    display: none;
+  }
+  .res-arch-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .res-arch-side {
+    padding-top: 0;
+  }
+  .industrial-spec-strip,
+  .reno-scope-rail {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .arch-nodes-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px 20px;
+  }
+  .arch-node:nth-child(n),
+  .method-path-step:nth-child(n) {
+    margin-top: 0;
+  }
+  .arch-node:nth-child(5),
+  .method-path-step:nth-child(5) {
+    grid-column: 1 / -1;
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .reno-scope-item {
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid var(--border);
+  }
+  .reno-diptych {
+    grid-template-columns: 1fr;
+  }
+  .reno-diptych-frame {
+    height: 260px;
+  }
+  .method-path-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px 20px;
+  }
+  .finishing-gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .service-scope-list,
+  .comm-spec-grid,
+  .industrial-spec-strip,
+  .arch-nodes-row,
+  .reno-scope-rail,
+  .method-path-grid {
+    grid-template-columns: 1fr;
+  }
+  .industrial-banner-img {
+    height: 260px;
+  }
+}
