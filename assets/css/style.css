@@ -329,13 +329,14 @@ img {
   align-items: center;
   gap: 12px;
   text-decoration: none;
-  flex-shrink: 1;
+  flex-shrink: 0;
   min-width: 0;
 }
 
 .brand-lockup img {
   width: 40px;
   height: 40px;
+  flex-shrink: 0;
 }
 
 .brand-text {
@@ -350,6 +351,7 @@ img {
   font-size: 1.1rem;
   letter-spacing: 0.04em;
   color: var(--navy);
+  white-space: nowrap;
 }
 
 .brand-sub {
@@ -359,12 +361,13 @@ img {
   text-transform: uppercase;
   color: var(--grey);
   margin-top: 3px;
+  white-space: nowrap;
 }
 
 .desktop-nav {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 4px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -373,19 +376,20 @@ img {
 .desktop-nav .nav-link-item {
   position: relative;
   display: inline-block;
-  padding: 10px 13px;
+  padding: 10px 12px;
   font-family: var(--font-heading);
   font-size: 0.86rem;
   font-weight: 600;
   color: var(--navy);
+  white-space: nowrap;
   transition: color var(--transition);
 }
 
 .desktop-nav .nav-link-item::after {
   content: "";
   position: absolute;
-  left: 13px;
-  right: 13px;
+  left: 12px;
+  right: 12px;
   bottom: 4px;
   height: 2px;
   background-color: var(--orange);
@@ -408,6 +412,7 @@ img {
   display: inline-flex;
   align-items: center;
   gap: 10px;
+  flex-shrink: 0;
 }
 
 .rtl-toggle-btn,
@@ -1030,14 +1035,43 @@ img {
 /* ==========================================================================
    Responsive Breakpoints
    ========================================================================== */
-@media (max-width: 1199.98px) {
+@media (max-width: 1399.98px) {
+  .navbar-wrap {
+    gap: 12px;
+  }
+  .brand-name {
+    font-size: 1rem;
+  }
+  .brand-sub {
+    font-size: 0.62rem;
+    letter-spacing: 0.11em;
+  }
+  .desktop-nav {
+    gap: 0;
+  }
   .desktop-nav .nav-link-item {
     padding: 10px 9px;
-    font-size: 0.82rem;
+    font-size: 0.81rem;
+  }
+  .desktop-nav .nav-link-item::after {
+    left: 9px;
+    right: 9px;
+  }
+  .header-cta {
+    gap: 8px;
+  }
+  .header-cta .btn-structura {
+    padding: 11px 18px;
+    font-size: 0.84rem;
+  }
+  .rtl-toggle-btn,
+  .theme-toggle-btn {
+    width: 40px;
+    height: 40px;
   }
 }
 
-@media (max-width: 1100.98px) {
+@media (max-width: 1199.98px) {
   .desktop-nav,
   .header-cta .btn-structura,
   .header-cta .theme-toggle-btn,
@@ -6313,7 +6347,12 @@ img {
 
   .vtimeline-thumb {
     width: 100%;
-    height: 150px;
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+  .vtimeline-thumb img {
+    min-height: 0;
+    object-position: center 20%;
   }
 
   .orbit-stage {
@@ -7092,6 +7131,31 @@ img {
   font-size: 0.92rem;
   text-align: start;
   color: var(--grey);
+}
+
+[data-theme="dark"] .structura-accordion .accordion-item {
+  border-color: #264157 !important;
+  background-color: #162b3d;
+}
+
+[data-theme="dark"] .structura-accordion .accordion-button {
+  background-color: #162b3d;
+  color: #f3f6f8;
+}
+
+[data-theme="dark"] .structura-accordion .accordion-button:not(.collapsed) {
+  background-color: #1d364c;
+  color: #f3f6f8;
+  border-bottom-color: #264157;
+}
+
+[data-theme="dark"] .structura-accordion .accordion-button::after {
+  filter: brightness(0) invert(1);
+}
+
+[data-theme="dark"] .structura-accordion .accordion-body {
+  background-color: #132535;
+  color: #cbd5e1;
 }
 
 @media (max-width: 991.98px) {
