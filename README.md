@@ -1,2 +1,0 @@
-# Civil_Contractor_Builders
-Automated website repository for Civil_Contractor_Builders

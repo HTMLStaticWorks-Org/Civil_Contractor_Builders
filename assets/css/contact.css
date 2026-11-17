@@ -67,6 +67,22 @@
   color: var(--charcoal);
 }
 
+[data-theme="dark"] .quote-form-card .form-control,
+[data-theme="dark"] .quote-form-card .form-select {
+  background-color: #122332;
+  border-color: #2a465e;
+  color: #f3f6f8;
+}
+
+.connect-heading {
+  letter-spacing: 0.08em;
+  color: var(--navy);
+}
+
+[data-theme="dark"] .connect-heading {
+  color: #f3f6f8;
+}
+
 .quote-form-card .form-control:focus,
 .quote-form-card .form-select:focus {
   border-color: var(--navy);

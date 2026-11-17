@@ -50,10 +50,22 @@
   background: var(--light-concrete);
 }
 
+[data-theme="dark"] .filter-btn:hover {
+  background: #1f3b52;
+  border-color: var(--orange);
+  color: #ffffff;
+}
+
 .filter-btn.is-active {
   background: var(--orange);
   border-color: var(--orange);
   color: var(--white);
+}
+
+[data-theme="dark"] .filter-btn.is-active {
+  background: var(--orange);
+  border-color: var(--orange);
+  color: #ffffff;
 }
 
 /* Featured Project Card */
@@ -403,5 +415,16 @@
   }
   .lightbox-next {
     right: 24px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .project-filters {
+    justify-content: center;
+  }
+  .filter-btn {
+    flex: 0 0 calc(50% - 5px);
+    justify-content: space-between;
+    padding: 10px 12px;
   }
 }

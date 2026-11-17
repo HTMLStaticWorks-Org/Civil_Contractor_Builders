@@ -367,6 +367,10 @@
   border-bottom-color: #22384a;
 }
 
+[data-theme="dark"] .home-hero h1 {
+  color: #f3f6f8;
+}
+
 [data-theme="dark"] .hero-mini-val {
   color: #f3f6f8;
 }

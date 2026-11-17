@@ -1050,12 +1050,37 @@ img {
 }
 
 @media (max-width: 991.98px) {
+  .top-announcement {
+    padding: 7px 0;
+    font-size: 0.74rem;
+    overflow: hidden;
+  }
+  .top-announcement .container {
+    max-width: 100%;
+    padding: 0;
+  }
+  .top-announcement .announcement-inner {
+    display: inline-flex;
+    width: max-content;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 24px;
+    white-space: nowrap;
+    animation: announcementMarquee 16s linear infinite;
+  }
+  .top-announcement:hover .announcement-inner,
+  .top-announcement:active .announcement-inner {
+    animation-play-state: paused;
+  }
+  .announcement-tagline,
+  .announcement-meta {
+    flex-shrink: 0;
+  }
+  [dir="rtl"] .top-announcement .announcement-inner {
+    animation-name: announcementMarqueeRtl;
+  }
   .section-pad {
     padding: 68px 0;
-  }
-  .announcement-inner {
-    justify-content: center;
-    text-align: center;
   }
   .section-title,
   .section-lead {
@@ -1086,6 +1111,16 @@ img {
   .process-step-card {
     text-align: start;
   }
+}
+
+@keyframes announcementMarquee {
+  0% { transform: translateX(100vw); }
+  100% { transform: translateX(-100%); }
+}
+
+@keyframes announcementMarqueeRtl {
+  0% { transform: translateX(-100vw); }
+  100% { transform: translateX(100%); }
 }
 
 @media (max-width: 575.98px) {
@@ -1347,9 +1382,22 @@ img {
   border-color: #22384a;
 }
 
+[data-theme="dark"] .mobile-drawer-header,
+[data-theme="dark"] .mobile-drawer-footer {
+  border-color: #22384a;
+}
+
+[data-theme="dark"] .mobile-nav-list a:hover,
+[data-theme="dark"] .mobile-nav-list a.active {
+  background: #1a3246;
+  color: var(--orange);
+  border-left-color: var(--orange);
+}
+
 [data-theme="dark"] .brand-lockup img,
 [data-theme="dark"] .footer-brand img {
-  filter: brightness(0) invert(0.96);
+  content: url("../images/logo/structura-logo-white.svg");
+  filter: none;
 }
 
 [data-theme="dark"] .site-footer {
@@ -1379,12 +1427,23 @@ img {
   color: var(--white);
 }
 
+[data-theme="dark"] .footer-socials a:hover {
+  background: var(--orange);
+  border-color: var(--orange);
+  color: var(--white);
+}
+
 [data-theme="dark"] .footer-bottom {
   border-top-color: rgba(255, 255, 255, 0.12);
 }
 
 [data-theme="dark"] .bg-light-concrete {
   background-color: #132636;
+}
+
+[data-theme="dark"] .bg-white {
+  background-color: #162b3d !important;
+  border-color: #264157 !important;
 }
 
 [data-theme="dark"] .service-panel,
@@ -1452,6 +1511,17 @@ img {
 
 [data-theme="dark"] .form-control::placeholder {
   color: #7f91a1;
+}
+
+[data-theme="dark"] input[type="date"],
+[data-theme="dark"] input[type="time"],
+[data-theme="dark"] input[type="datetime-local"] {
+  color-scheme: dark;
+}
+
+[data-theme="dark"] input[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0.92;
+  cursor: pointer;
 }
 
 [data-theme="dark"] .btn-outline-navy {
